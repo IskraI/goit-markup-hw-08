@@ -1,0 +1,28 @@
+.feature {
+	@extend %container;
+}
+.feature__list {
+	display: flex;
+	gap: 30px;
+}
+
+.feature__pic {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	width: 270px;
+	height: 120px;
+	background-color: var(--secondary-color);
+}
+
+.feature__title {
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.14;
+	color: var(--title-text-color);
+	text-transform: uppercase;
+}
+.feature__dscr {
+	line-height: 1.71;
+}

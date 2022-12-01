@@ -1,0 +1,17 @@
+:root {
+	--title-text-color: #212121; /*цвет заголовков h2 h3*/
+	--text-color: #757575; /*цвет  текста*/
+	--accent-color: #2196f3; /*цвет акцент*/
+	--logo-color-text: #000000; /*цвет лого*/
+	--secondary-color: #f5f4fa; /*вторичнй фон цвет секций*/
+	--brand-color: #2f303a; /*выделяющийся фон сайта*/
+	--main-color: #ffffff; /*основной фон, текст на контрасте*/
+	--button-active: #188ce8; /*цвет фокусированной кнопки*/
+	--footer-text-color: rgba(255, 255, 255, 0.6); /*доп цвет текста в футере*/
+	--line-color: #ececec; /* цвет линии */
+	--border-color: #eeeeee; /*цвет рамки*/
+	--bcg-hero: #c4c4c4; /*фон героя*/
+	--box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /*тень*/
+	--icon-color: #afb1b8; /*цвет иконок*/
+	--cubic: cubic-bezier(0.4, 0, 0.2, 1); /*кубик переходу*/
+}

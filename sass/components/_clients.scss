@@ -1,0 +1,23 @@
+.clients__pic {
+	display: flex;
+	gap: 30px;
+}
+.clients__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid currentColor;
+	border-radius: 4px;
+	color: var(--icon-color);
+	transition: color 250ms var(--cubic);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+.clients__icon {
+	fill: currentColor;
+}

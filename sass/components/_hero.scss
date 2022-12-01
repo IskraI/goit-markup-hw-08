@@ -1,0 +1,40 @@
+.hero {
+	@extend %container;
+	padding: 200px 0;
+	text-align: center;
+}
+
+.hero__bcg {
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 600px;
+	max-width: 1600px;
+	background-color: var(--bcg-hero);
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(rgba(47, 48, 58, 0.4)),
+			to(rgba(47, 48, 58, 0.4))
+		),
+		url(../images/bcghero.jpg);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcghero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+}
+
+.hero__title {
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 696px;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	color: var(--main-color);
+	text-transform: uppercase;
+}
