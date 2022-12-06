@@ -1,8 +1,16 @@
 .filter {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
 	gap: 8px;
+	margin-bottom: 40px;
+	@media (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	@media (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
 }
 
 .filter-btn {

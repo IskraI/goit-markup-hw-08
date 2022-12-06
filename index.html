@@ -18,16 +18,21 @@
 	</head>
 	<body>
 		<!-- ------HEADER ---------->
-		<!-- <header>
+		<header>
 			<div class="header container">
 				<nav class="nav">
 					<!-- prettier-ignore -->
-		<!-- <a href="./index.html" class="logo link" lang="en">
+					<a href="./index.html" class="logo link" lang="en">
 						<span class="logo--accent">Web</span>Studio
 					</a>
-
+					<button class="menu-toggle js-open-menu" type="button " aria-expanded="false" aria-controls="mobile-menu">
+						<svg class="menu__icon" width="40" height="40" aria-label="Мобільне меню">
+							<use class="menu-toggle__icon" href="/images/sprite.svg#icon-menu"></use>
+							<!-- <use class="menu-btn__icon-close" href="/images/sprite.svg#icon-close"></use> -->
+						</svg>
+					</button>
 					<ul class="nav__list list">
-						 < class="nav-site list"> 
+						<!-- < class="nav-site list"> -->
 						<li class="nav__item item">
 							<a href="./index.html" class="nav__link nav__link--current link">Студія</a>
 						</li>
@@ -58,7 +63,7 @@
 					</li>
 				</ul>
 			</div>
-		</header> -->
+		</header>
 		<main>
 			<!-- ------ HERO ------ -->
 			<section class="hero__bcg">
@@ -119,16 +124,31 @@
 					<ul class="works__list list">
 						<li class="item">
 							<div class="works__item">
-								<img src="./images/keyboard.jpg" alt="набирает текст на клавіатурі" width="370" />
+								<img
+									srcset="./images/works/laptop_l@1x.jpg 1x, ./images/works/laptop_l@2x.jpg 2x"
+									src="./images/works/laptop_l@1x.jpg"
+									alt="набирает текст на клавіатурі"
+									width="370"
+								/>
 								<p class="works__dscr">Десктопні додатки</p>
 							</div>
 						</li>
 						<li class="works__item item">
-							<img src="./images/notebook.jpg" alt="моделирование на мобильном" width="370" />
+							<img
+								srcset="./images/works/desk_l@1x.jpg 1x, ./images/works/desk_l@2x.jpg 2x"
+								src="./images/works/desk_l@1x.jpg"
+								alt="моделирование на мобильном"
+								width="370"
+							/>
 							<p class="works__dscr">Мобільні додатки</p>
 						</li>
 						<li class="works__item works__item">
-							<img src="./images/tablet.jpg" alt="вибір палітри на планшете" width="370" />
+							<img
+								srcset="./images/works/tablet_l@1x.jpg 1x, ./images/works/tablet_l@2x.jpg 2x"
+								src="./images/works/tablet_l@1x.jpg"
+								alt="вибір палітри на планшете"
+								width="370"
+							/>
 							<p class="works__dscr">Дизайнерські рішення</p>
 						</li>
 					</ul>
@@ -140,7 +160,21 @@
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="team__list list">
 						<li class="team__item">
-							<img class="team__foto" src="./images/demjanenko.jpg" alt="Ігор Дем'яненко" width="270" />
+							<img
+								class="team__foto"
+								srcset="
+									./images/team/demjanenko_270.jpg  270w,
+									./images/team/demjanenko_s450.jpg 450w,
+									./images/team/demjanenko_540.jpg  540w,
+									./images/team/demjanenko_m354.jpg 354w,
+									./images/team/demjanenko_m708.jpg 708w,
+									./images/team/demjanenko_s900.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/team/demjanenko_m354.jpg"
+								alt="Ігор Дем'яненко"
+								loading="lazy"
+							/>
 							<div class="team__card">
 								<h3 class="team__title">Ігор Дем'яненко</h3>
 								<p class="team__dscr">Product Designer</p>
@@ -177,7 +211,20 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/repina.jpg" alt="Ольга Рєпіна" width="270" />
+							<img
+								srcset="
+									./images/team/repina_270.jpg 270w,
+									./images/team/repina_450.jpg 450w,
+									./images/team/repina_540.jpg 540w,
+									./images/team/repina_354.jpg 354w,
+									./images/team/repina_708.jpg 708w,
+									./images/team/repina_900.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/team/repina_354.jpg"
+								alt="Ольга Рєпіна"
+								loading="lazy"
+							/>
 							<div class="team__card">
 								<h3 class="team__title">Ольга Рєпіна</h3>
 								<p class="team__dscr">Frontend Developer</p>
@@ -214,7 +261,20 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/tarasov.jpg" alt="Микола Тарасов" width="270" />
+							<img
+								srcset="
+									./images/team/tarasov_270.jpg 270w,
+									./images/team/tarasov_450.jpg 450w,
+									./images/team/tarasov_540.jpg 540w,
+									./images/team/tarasov_354.jpg 354w,
+									./images/team/tarasov_708.jpg 708w,
+									./images/team/tarasov_900.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/team/tarasov_354.jpg"
+								alt="Микола Тарасов"
+								loading="lazy"
+							/>
 							<div class="team__card">
 								<h3 class="team__title">Микола Тарасов</h3>
 								<p class="team__dscr">Marketing</p>
@@ -251,7 +311,20 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/ermakov.jpg" alt="Михайло Єрмаков" width="270" />
+							<img
+								srcset="
+									./images/team/ermakov_450.jpg 450w,
+									./images/team/ermakov_270.jpg 270w,
+									./images/team/ermakov_540.jpg 540w,
+									./images/team/ermakov_354.jpg 354w,
+									./images/team/ermakov_708.jpg 708w,
+									./images/team/ermakov_900.jpg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/team/ermakov_354.jpg"
+								alt="Михайло Єрмаков"
+								loading="lazy"
+							/>
 							<div class="team__card">
 								<h3 class="team__title">Михайло Єрмаков</h3>
 								<p class="team__dscr">UI Designer</p>
@@ -483,6 +556,47 @@
 				</form>
 			</div>
 		</div>
+
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<svg class="menu__icon" width="40" height="40" aria-label="Мобільне меню">
+					<!-- <use class="menu-toggle__icon" href="/images/sprite.svg#icon-menu"></use> -->
+					<use class="menu-btn__icon-close" href="/images/sprite.svg#icon-close-menu"></use>
+				</svg>
+			</button>
+
+			<ul class="mobile-menu">
+				<li class="mobile-menu-item">
+					<a href="./index.html" class="mobile-menu-link link current">Студія</a>
+				</li>
+				<li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Портфоліо</a></li>
+				<li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Контакти</a></li>
+			</ul>
+			<div>
+				<ul class="mobile-contacts">
+					<li class="mobile-contacts-item">
+						<a href="tel:+380961111111" class="mobile-contacts-tel link">+38 096 111 11 11</a>
+					</li>
+					<li class="mobile-contacts-item">
+						<a href="mailto:info@devstudio.com" class="mobile-contacts-mail link">info@devstudio.com</a>
+					</li>
+				</ul>
+				<ul class="mobile-socials">
+					<li><a href="" class="mobile-socials-link link">Instagram</a></li>
+					<li><a href="" class="mobile-socials-link link">Twitter</a></li>
+					<li><a href="" class="mobile-socials-link link">Facebook</a></li>
+					<li><a href="" class="mobile-socials-link link">LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+
 		<script src="./js/modal.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>
